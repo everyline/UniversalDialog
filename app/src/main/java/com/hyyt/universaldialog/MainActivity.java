@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.hyyt.universaldialoglibrary.UniversalAlertDialog;
+import com.hyyt.universaldialoglibrary.dialoghelper.DialogHelper;
+import com.hyyt.universaldialoglibrary.dialoginterface.AlertButtonsClickListener;
+import com.hyyt.universaldialoglibrary.fragmentdialog.AlertFragmentDialog;
 
 public class MainActivity extends BaseActivity {
 
@@ -14,6 +17,8 @@ public class MainActivity extends BaseActivity {
     private Button button1;
     private Button button2;
     private Button button3;
+    private Button button4;
+    private Button button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,21 @@ public class MainActivity extends BaseActivity {
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
